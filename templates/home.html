@@ -7,4 +7,46 @@
 {% block content %}
     <!--page content-->
     <h1>Home Page</h1>
+    <p> Welcome to my website</p>
+    <br>
+    
+     <div class="container mt-4">
+  <h3>Pitching Velocity</h3>
+  <p>Complete the form then hit Submit to receive relatively how fast you should be able to throw a baseball.</p>
+    
+  <form action="/results" class="needs-validation" novalidate>
+    <div class="mb-4">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="mb-4">
+      <label for="height" class="form-label">Height:</label>
+      <input type="number" class="form-control" id="height" placeholder="Enter height in inches" name="height" aria-describedby="inputGroupPrepend" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field in inches.</div>
+    </div>
+     <div class="mb-4">
+      <label for="weight" class="form-label">Weight:</label>
+      <input type="number" class="form-control" id="weight" placeholder="Enter weight in lbs" name="weight" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+     <div class="mb-4">
+      <label for="deadlift" class="form-label">Max Deadlift:</label>
+      <input type="number" class="form-control" id="deadlift" placeholder="Enter max deadlift" name="deadlift" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+      <label class="form-check-label" for="myCheck">This information is accurate.</label>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </div>
+    <div class="mb-4">
+  <button class="btn btn-primary" type="submit">Submit</button> <!--  -->
+</div>
+</form>
 {% endblock %}
